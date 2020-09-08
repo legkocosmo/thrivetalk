@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'Larsseit-Medium';
+    src: url('../fonts/larsset/Larsseit-Medium.eot');
+    src: url('../fonts/larsset/Larsseit-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/larsset/Larsseit-Medium.woff2') format('woff2'),
+        url('../fonts/larsset/Larsseit-Medium.woff') format('woff'),
+        url('../fonts/larsset/Larsseit-Medium.ttf') format('truetype'),
+        url('../fonts/larsset/Larsseit-Medium.svg#Larsseit-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Larsseit-Light';
+    src: url('../fonts/larsset/Larsseit-Light.eot');
+    src: url('../fonts/larsset/Larsseit-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/larsset/Larsseit-Light.woff2') format('woff2'),
+        url('../fonts/larsset/Larsseit-Light.woff') format('woff'),
+        url('../fonts/larsset/Larsseit-Light.ttf') format('truetype'),
+        url('../fonts/larsset/Larsseit-Light.svg#Larsseit-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Larsseit';
+    src: url('../fonts/larsset/Larsseit.eot');
+    src: url('../fonts/larsset/Larsseit.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/larsset/Larsseit.woff2') format('woff2'),
+        url('../fonts/larsset/Larsseit.woff') format('woff'),
+        url('../fonts/larsset/Larsseit.ttf') format('truetype'),
+        url('../fonts/larsset/Larsseit.svg#Larsseit') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Larsseit-Bold';
+    src: url('../fonts/larsset/Larsseit-Bold.eot');
+    src: url('../fonts/larsset/Larsseit-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/larsset/Larsseit-Bold.woff2') format('woff2'),
+        url('../fonts/larsset/Larsseit-Bold.woff') format('woff'),
+        url('../fonts/larsset/Larsseit-Bold.ttf') format('truetype'),
+        url('../fonts/larsset/Larsseit-Bold.svg#Larsseit-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
