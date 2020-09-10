@@ -99,6 +99,7 @@ li {
   line-height: 16px;
   color: #22356f;
 }
+
 .nav__item::after {
   content: "";
   display: block;
@@ -209,7 +210,6 @@ li {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* align-items: center; */
   /* min-height: 602px; */
   padding: 95px 0;
 }
@@ -337,8 +337,6 @@ li {
   height: 9px;
   border-radius: 50%;
   background: #e9b730;
-  /* margin-right: 10px; */
-  /* margin-bottom: 5px; */
   position: absolute;
   left: 0;
   top: 46px;
@@ -360,47 +358,88 @@ li {
   flex-wrap: wrap;
 }
 
-.health__item {
+/* .health__item {
   width: 480px;
   height: 480px;
   padding: 50px;
   overflow: hidden;
   transition: background 0.5s;
 }
+ */
+.health__item {
+  width: 480px;
+  height: 480px;
+  padding: 50px;
+  background: url("../img/mask.png") no-repeat center center;
+  position: relative;
+  overflow: hidden;
+  object-fit: cover;
+  background-size: cover;
+}
 
+.health__item::after {
+  content: "";
+  display: block;
+  width: 480px;
+  height: 480px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition: opacity 0.5s;
+}
+/* 
 .health__item:hover {
   background: url("../img/mask.png") no-repeat center;
-}
+} */
 
-.health__help--1 {
+.health__help--1::after {
   background: #22356f;
+  opacity: 1;
 }
 
-.health__help--2 {
+.health__help--2::after {
   background: #0052c1;
+  opacity: 1;
 }
 
-.health__help--3 {
+.health__help--3::after {
   background: #76b58b;
+  opacity: 1;
 }
 
-.health__help--4 {
+.health__help--4::after {
   background: #62d0df;
+  opacity: 1;
 }
 
-.health__help--5 {
+.health__help--5::after {
   background: #dee1ff;
+  opacity: 1;
 }
 
-.health__help--6 {
+.health__help--6::after {
   background: #8f00ff;
+  opacity: 1;
+}
+
+.health__item:hover.health__help--1::after,
+.health__item:hover.health__help--2::after,
+.health__item:hover.health__help--3::after,
+.health__item:hover.health__help--4::after,
+.health__item:hover.health__help--5::after,
+.health__item:hover.health__help--6::after {
+  opacity: 0;
 }
 
 /**/
+.section__plans {
+  background: #eefdff;
+}
+
 .plans__block {
   display: flex;
   flex-wrap: wrap;
-  margin: 50px 0;
+  padding: 50px 0;
   justify-content: space-around;
 }
 
@@ -440,8 +479,6 @@ li {
 .know__block {
   max-width: 675px;
   width: 100%;
-  /* padding-top: 150px; */
-  /* margin-left: 40%; */
   padding: 150px 0;
 }
 
@@ -473,7 +510,6 @@ li {
   align-items: center;
   letter-spacing: 0.1em;
   color: #fab63e;
-  /* padding: 10px 20px; */
   text-transform: uppercase;
 }
 
@@ -481,7 +517,6 @@ li {
   background-color: transparent;
   color: #fab63e;
   border-color: transparent;
-  /* padding: 10px 20px; */
   text-decoration: underline;
 }
 
@@ -503,7 +538,6 @@ li {
   line-height: 12px;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  /* padding-top: 150px; */
   margin-bottom: 150px;
 }
 
@@ -540,23 +574,24 @@ li {
 
 /*footer*/
 .footer__top {
-  /* background: url("../img/bg-footer.jpg") no-repeat top left; */
+  background: url("../img/bg-footer_n.jpg") no-repeat center/cover;
   /* width: 525px; */
   background-color: #ffffff;
-  height: 380px;
+  /* height: 380px; */
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
+  padding: 50px 0;
 }
 
-.footer__img {
+/* .footer__img {
   max-width: 570px;
   width: 100%;
-}
+} */
 
 .footer__block {
   max-width: 765px;
   width: 100%;
-  margin: auto;
+  /* margin: auto; */
   padding: 80px 0;
   font-size: 14px;
   display: flex;
@@ -620,11 +655,6 @@ li {
     margin-bottom: 20px;
   }
 
-  /* .about__help, .health__item {
-    width: 400px;
-    height: 400px;
-    justify-content: space-around;
-  } */
   .plans__item {
     width: 400px;
     height: auto;
@@ -646,11 +676,16 @@ li {
     padding-left: 20px;
   }
 
-  /*  .about__item,
-  .about__item::after {
-    width: 300px;
-    height: 300px;
-  } */
+  .footer__block {
+    max-width: 500px;
+    padding: 0;
+    flex-wrap: wrap;
+    margin-right: 5%;
+  }
+  
+  .footer__copy {
+    text-align: center;
+  }
 }
 
 @media (max-width: 992px) {
@@ -704,7 +739,7 @@ li {
     padding: 20px;
   }
 
-  .section__know {
+  .section__know, .footer__top {
     background: #ffffff;
   }
 
@@ -780,16 +815,32 @@ li {
     height: 300px;
   }
 
-  .know__block {
+  .know__block, .section__contact, .footer__top {
     padding: 50px 20px;
   }
 
-  .know__title {
+  .know__title, .contact__title {
     margin-bottom: 50px;
   }
 
-  .know__text {
+  .know__text, .contact__text {
     font-size: 25px;
     line-height: 35px;
   }
+
+  .contact__name {
+    font-size: 40px;
+    line-height: 50px;
+    margin-bottom: 20px;
+  }
+
+  .footer__top {
+    max-width: 350px;
+  }
+
+  .footer__title {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
 }
