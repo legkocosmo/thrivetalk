@@ -759,6 +759,10 @@ li {
   .contact__block {
     margin: auto;
   }
+
+  .footer__top {
+    justify-content: center;
+  }
 }
 
 @media (max-width: 600px) {
