@@ -507,13 +507,16 @@ li {
   letter-spacing: 0.1em;
   color: #fab63e;
   text-transform: uppercase;
+  border: 2px solid transparent;
+  padding: 10px;
 }
 
 .know__btn:hover {
   background-color: transparent;
   color: #fab63e;
-  border-color: transparent;
-  text-decoration: underline;
+  border-color: #fab63e;
+  /* text-decoration: underline; */
+  padding: 10px;
 }
 
 /*contact*/
@@ -641,7 +644,7 @@ li {
   .health__block {
     flex-wrap: wrap;
     /* max-width: 1000px; */
-    width: 100%;
+    /* width: 100%; */
     margin: auto;
     justify-content: space-around;
   }
