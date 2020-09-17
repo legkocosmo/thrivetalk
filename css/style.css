@@ -561,14 +561,16 @@ li {
   line-height: 23px;
   letter-spacing: 0.1em;
   color: #62d0df;
+  border: 2px solid transparent;
+  padding: 10px;
   text-transform: uppercase;
 }
 
 .contact__btn:hover {
   background-color: transparent;
   color: #62d0df;
-  border-color: transparent;
-  text-decoration: underline;
+  border-color: #62d0df;
+  padding: 10px;
 }
 
 /*footer*/
