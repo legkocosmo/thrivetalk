@@ -120,8 +120,6 @@ li {
 }
 
 .header__btn {
-  /* width: 150px;
-  height: 50px; */
   background: #62d0df;
   border-radius: 50px;
   font-size: 14px;
@@ -199,8 +197,6 @@ li {
 
 .section__thrive {
   background: url("../img/bg-section_n.jpg") no-repeat center/cover;
-  /* width: 525px; */
-  /* height: 604px; */
   color: #ffffff;
 }
 
@@ -210,7 +206,6 @@ li {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* min-height: 602px; */
   padding: 95px 0;
 }
 
@@ -463,8 +458,6 @@ li {
 .section__know {
   background: url("../img/bg-section1_n.jpg") no-repeat center/cover;
   width: 100%;
-  /* width: 525px; */
-  /* height: 800px; */
 }
 
 .know__width {
@@ -576,9 +569,7 @@ li {
 /*footer*/
 .footer__top {
   background: url("../img/bg-footer_n.jpg") no-repeat center/cover;
-  /* width: 525px; */
   background-color: #ffffff;
-  /* height: 380px; */
   display: flex;
   justify-content: flex-end;
   padding: 50px 0;
@@ -678,7 +669,7 @@ li {
     flex-wrap: wrap;
     margin-right: 5%;
   }
-  
+
   .footer__copy {
     text-align: center;
   }
@@ -692,7 +683,8 @@ li {
     justify-content: space-around;
   }
 
-  .about__item, .health__item {
+  .about__item,
+  .health__item {
     width: 50%;
     margin-bottom: 20px;
   }
@@ -721,7 +713,8 @@ li {
     padding: 75px 0;
   }
 
-  .about__item, .health__item {
+  .about__item,
+  .health__item {
     width: 90%;
   }
 
@@ -740,7 +733,8 @@ li {
     padding: 20px;
   }
 
-  .section__know, .footer__top {
+  .section__know,
+  .footer__top {
     background: #ffffff;
   }
 
@@ -817,18 +811,22 @@ li {
   .about__item::after,
   .health__item {
     /* width: 300px;*/
-    min-height: 300px; 
+    min-height: 300px;
   }
 
-  .know__block, .section__contact, .footer__top {
+  .know__block,
+  .section__contact,
+  .footer__top {
     padding: 50px 20px;
   }
 
-  .know__title, .contact__title {
+  .know__title,
+  .contact__title {
     margin-bottom: 50px;
   }
 
-  .know__text, .contact__text {
+  .know__text,
+  .contact__text {
     font-size: 25px;
     line-height: 35px;
   }
@@ -847,5 +845,4 @@ li {
     margin-top: 20px;
     margin-bottom: 10px;
   }
-
 }
