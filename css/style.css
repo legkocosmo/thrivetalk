@@ -48,7 +48,7 @@ li {
 }
 
 .width__site {
-  max-width: 1440px;
+  /* max-width: 1440px; */
   width: 100%;
   height: 100%;
   margin: auto;
@@ -270,7 +270,7 @@ li {
 }
 
 .about__item {
-  width: 360px;
+  width: 25%;
   height: 360px;
   padding: 50px;
   background: url("../img/mask.png") no-repeat center center;
@@ -283,7 +283,7 @@ li {
 .about__item::after {
   content: "";
   display: block;
-  width: 360px;
+  width: 100%;
   height: 360px;
   position: absolute;
   top: 0;
@@ -367,7 +367,7 @@ li {
 }
  */
 .health__item {
-  width: 480px;
+  width: 33.33%;
   height: 480px;
   padding: 50px;
   background: url("../img/mask.png") no-repeat center center;
@@ -380,7 +380,7 @@ li {
 .health__item::after {
   content: "";
   display: block;
-  width: 480px;
+  width: 100%;
   height: 480px;
   position: absolute;
   top: 0;
@@ -434,6 +434,10 @@ li {
 /**/
 .section__plans {
   background: #eefdff;
+}
+
+.wrapper__plans {
+  max-width: 1440px;
 }
 
 .plans__block {
@@ -644,15 +648,10 @@ li {
   .about__help,
   .health__block {
     flex-wrap: wrap;
-    max-width: 1000px;
+    /* max-width: 1000px; */
     width: 100%;
     margin: auto;
     justify-content: space-around;
-  }
-
-  .about__item,
-  .health__item {
-    margin-bottom: 20px;
   }
 
   .plans__item {
@@ -696,7 +695,8 @@ li {
     justify-content: space-around;
   }
 
-  .about__item {
+  .about__item, .health__item {
+    width: 50%;
     margin-bottom: 20px;
   }
 
@@ -722,6 +722,10 @@ li {
 
   .section__about {
     padding: 75px 0;
+  }
+
+  .about__item, .health__item {
+    width: 90%;
   }
 
   .about__block {
@@ -815,8 +819,8 @@ li {
   .about__item,
   .about__item::after,
   .health__item {
-    width: 300px;
-    height: 300px;
+    /* width: 300px;*/
+    min-height: 300px; 
   }
 
   .know__block, .section__contact, .footer__top {
