@@ -291,30 +291,27 @@ li {
   transition: opacity 0.5s;
 }
 
-.about__help--1::after {
+.about__help:nth-child(1)::after {
   background: #ffe2de;
   opacity: 1;
 }
 
-.about__help--2::after {
+.about__help:nth-child(2)::after {
   background: #c4e769;
   opacity: 1;
 }
 
-.about__help--3::after {
+.about__help:nth-child(3)::after {
   background: #62d0df;
   opacity: 1;
 }
 
-.about__help--4::after {
+.about__help:nth-child(4)::after {
   background: #0052c1;
   opacity: 1;
 }
 
-.about__item:hover.about__help--1::after,
-.about__item:hover.about__help--2::after,
-.about__item:hover.about__help--3::after,
-.about__item:hover.about__help--4::after {
+.about__item:hover.about__help:nth-child(n)::after {
   opacity: 0;
 }
 
@@ -392,42 +389,37 @@ li {
   background: url("../img/mask.png") no-repeat center;
 } */
 
-.health__help--1::after {
+.health__help:nth-child(1)::after {
   background: #22356f;
   opacity: 1;
 }
 
-.health__help--2::after {
+.health__help:nth-child(2)::after {
   background: #0052c1;
   opacity: 1;
 }
 
-.health__help--3::after {
+.health__help:nth-child(3)::after {
   background: #76b58b;
   opacity: 1;
 }
 
-.health__help--4::after {
+.health__help:nth-child(4)::after {
   background: #62d0df;
   opacity: 1;
 }
 
-.health__help--5::after {
+.health__help:nth-child(5)::after {
   background: #dee1ff;
   opacity: 1;
 }
 
-.health__help--6::after {
+.health__help:nth-child(6)::after {
   background: #8f00ff;
   opacity: 1;
 }
 
-.health__item:hover.health__help--1::after,
-.health__item:hover.health__help--2::after,
-.health__item:hover.health__help--3::after,
-.health__item:hover.health__help--4::after,
-.health__item:hover.health__help--5::after,
-.health__item:hover.health__help--6::after {
+.health__item:hover.health__help:nth-child(n)::after {
   opacity: 0;
 }
 
